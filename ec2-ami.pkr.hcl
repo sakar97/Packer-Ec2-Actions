@@ -36,6 +36,7 @@ source "amazon-ebs" "windows" {
   winrm_username = "Administrator"
   winrm_use_ssl = true
   winrm_insecure = true
+  user_data_file = "./winrm.txt"
 
   # This user data file sets up winrm and configures it so that the connection
   # from Packer is allowed. Without this file being set, Packer will not
