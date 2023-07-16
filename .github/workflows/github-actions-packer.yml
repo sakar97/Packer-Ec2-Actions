@@ -6,7 +6,7 @@
             - 'main'
     jobs:
       packer:
-        runs-on: windows-2019
+        runs-on: ubuntu-latest
         name: packer
     
         steps:
