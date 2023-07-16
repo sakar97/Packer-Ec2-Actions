@@ -26,7 +26,9 @@ source "amazon-ebs" "windows" {
   source_ami = "ami-04132f301c3e4f138"
   communicator = "winrm"
   winrm_username = "Administrator"
-  user_data_file = "./winrm.txt"
+  user_data_file = "./winrm.ps1"
+  winrm_use_ssl = true
+  winrm_insecure = true
 }
 
 # https://www.packer.io/docs/provisioners
