@@ -3,7 +3,7 @@
     on:
       push:
         branches:
-            - 'master'
+            - 'main'
     jobs:
       packer:
         runs-on: windows-2019
