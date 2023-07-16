@@ -36,7 +36,7 @@ build {
   sources = ["source.amazon-ebs.windows"]
   provisioner "powershell" {
     inline = [
-        "New-LocalUser -Name 'Test' -Description 'Description of this account.' -Password 'Weather123'"
+        "New-LocalUser -Name 'Test' -Description 'Description of this account.' -Password 'elon_musk@1234'"
     ]
   }
 }
