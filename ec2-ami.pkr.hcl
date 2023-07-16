@@ -1,3 +1,4 @@
+#packer file
 packer {
   required_plugins {
     amazon = {
