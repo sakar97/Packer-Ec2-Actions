@@ -36,9 +36,7 @@ build {
   sources = ["source.amazon-ebs.windows"]
   provisioner "powershell" {
     inline = [
-     "C:\\ProgramData\\Amazon\\EC2-Windows\\Launch\\Scripts\\SendWindowsIsReady.ps1 -Schedule",
-      "C:\\ProgramData\\Amazon\\EC2-Windows\\Launch\\Scripts\\InitializeInstance.ps1 -Schedule",
-      "C:\\ProgramData\\Amazon\\EC2-Windows\\Launch\\Scripts\\SysprepInstance.ps1 -NoShutdown"
+        "New-LocalUser -Name 'Test' -Description 'Description of this account.' -NoPassword"
     ]
   }
 }
