@@ -23,7 +23,7 @@ source "amazon-ebs" "windows" {
   ami_name = "${var.ami_name}"
   instance_type = "t2.micro"
   region = "${var.region}"
-  source_ami = ami-04132f301c3e4f138
+  source_ami = "ami-04132f301c3e4f138"
   communicator = "winrm"
   winrm_username = "Administrator"
   user_data_file = "./winrm.txt"
