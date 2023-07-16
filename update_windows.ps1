@@ -1,2 +1,3 @@
 Install-Module PSWindowsUpdate
-Get-WindowsUpdate -AcceptAll -Install -AutoReboot
+Add-WUServiceManager -MicrosoftUpdate
+Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot | Out-File "C:\win-MSUpdates.log" -Force
